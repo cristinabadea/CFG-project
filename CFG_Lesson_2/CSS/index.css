@@ -1,0 +1,66 @@
+/** @format */
+
+body {
+  background-color: rgb(213, 228, 222);
+}
+
+h1 {
+  text-align: center;
+  color: #2bbee2;
+  font-weight: bolder;
+  font-size: 3rem;
+  font-family: "Dosis", sans-serif;
+
+  /* box model */
+  border: 2px solid #2c71af;
+  padding: 2rem;
+  margin: 3rem;
+}
+h1:hover {
+  background: linear-gradient(
+    rgb(77, 41, 76),
+    rgb(133, 68, 131),
+    rgb(232, 128, 226),
+    rgb(230, 150, 228),
+    white
+  );
+}
+p:hover {
+  color: darkblue;
+}
+p {
+  background-color: #2c71af;
+  padding: 1.5rem;
+  color: white;
+  font-family: "Dosis", sans-serif;
+  border-radius: 2rem;
+}
+.different-background {
+  background-color: #03556a;
+  padding: 1.7rem;
+}
+
+#fonts {
+  background-color: rgb(12, 55, 55);
+  padding: 1.9rem;
+}
+
+.first {
+  background-color: rgb(230, 194, 230);
+  padding: 1rem;
+  margin: 2rem;
+
+  background: linear-gradient(plum, white, pink);
+  border-radius: 0 80px 0px 80px;
+  opacity: 80%;
+}
+
+.second {
+  background-color: rgb(161, 211, 178);
+  padding: 1rem;
+  margin: 2rem;
+
+  background: linear-gradient(pink, white, plum);
+  border-radius: 80px 0 80px 0;
+  opacity: 80%;
+}
