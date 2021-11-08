@@ -1,0 +1,49 @@
+.nav-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nav-item ul li{
+    display: inline;
+    margin: 0 5px 0 0;
+} 
+
+.nav-item ul li button{
+    background-color: blue;
+    color: white;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    
+}
+
+.item{
+    margin:0.3rem;
+    padding: 0.3rem;
+}
+
+input{
+   margin: 2rem;
+   width: 40vw;
+   border-radius: 30px;
+   padding: 0.5rem;
+}
+
+.my-btn{
+    margin: 0 20px 0 20px;
+    font-size: 17px;
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+}
+.my-btn:hover{
+    
+}
