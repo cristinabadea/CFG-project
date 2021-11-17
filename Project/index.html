@@ -3,10 +3,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.css">
     <title>Homework</title>
 </head>
 <body>
@@ -49,11 +50,26 @@
         <div class="main-title"> Welcome to F<img class="logo-img" src="../Images/burger-logo.jfif"><img  class="logo-img" src="../Images/burger-logo.jfif">DIE!</div>
        
         <!-- Img with the restaurant -->
-        <div class="container-img">
-            <div class="img-item"><img class="pics" src="../Images/pic1-foodie.jfif" alt="Main image"></div>
-            <div class="img-item"><img class="pics" src="../Images/pic2-foodie.jfif" alt="Main image"></div>
-            <div class="img-item"><img class="pics" src="../Images/pic3-foodie.jfif" alt="Main image"></div>
+         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="../Images/foodExample2j.jfif" class="d-block w-100 h-50 alt="foodExample">
+                
+            </div>
+            <div class="carousel-item">
+                <img src="../Images/foodExample1.jfif" class="d-block w-100 h-50 alt="foodExample">
+            </div>
+            
         </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span style="color:black" class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span style="color:black" class="visually">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span style="color:black" class="carousel-control-next-icon" aria-hidden="false"></span>
+            <span style="color:black" class="visually">Next</span>
+        </button>
+    </div>
     </section>
     <!-- First section end -->
 
@@ -61,17 +77,27 @@
     <section class="section-2">
         <button class="menu-btn"> <img  class='section-2-item' src="../Images/menu-logo.png" alt="menu-logo"></button>
     </section>
-    <ul class="section-2-1">
-        <li><img src="" alt='our_food'></li>
-        <li><img src="" alt='our_food'></li>
-        <li><img src="" alt='our_food'></li>
-        <li><img src="" alt='our_food'></li>
-    </ul>
+
+   
+
+
+
+    <!-- <ul class="section-2-1">
+        <li class="section-2-1-item"><img src="../Images/foodExample1.jfif" alt='our_food'></li>
+        <li  class="section-2-1-item" ></li><img src="../Images/foodExample2j.jfif" alt='our_food'></li>
+        <li class="section-2-1-item"><img src="../Images/foodExample3.jfif" alt='our_food'></li>
+        <li class="section-2-1-item"><img src="../Images/foodExample4.jfif" alt='our_food'></li>
+    </ul> -->
     <!-- Second section end -->
 
     <!-- Third section start -->
     <section class="section-3">
-        About us
+        <h3> About us...</h3>
+         <div class="container-img">
+            <div class="img-item"><img class="pics" src="../Images/pic1-foodie.jfif" alt="Main image"></div>
+            <div class="img-item"><img class="pics" src="../Images/pic2-foodie.jfif" alt="Main image"></div>
+            <div class="img-item"><img class="pics" src="../Images/pic3-foodie.jfif" alt="Main image"></div>
+        </div>
     </section>
     <!-- Third section end -->
     </main>
@@ -101,5 +127,13 @@
             </div>
         </div>
     </Footer>
+
+
+
+    <script src="./index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     </body>
 </html>
