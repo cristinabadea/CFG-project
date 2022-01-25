@@ -23,9 +23,9 @@
           name: document.getElementById("product-name").innerHTML,
           price: document.getElementById("product-price").innerHTML,
         });
+        ga("ec:setAction", "add");
+        ga("send", "event", "UX", "click", "add to cart");
       }
-      ga("ec:setAction", "add");
-      ga("send", "event", "UX", "click", "add to cart");
     </script>
     <script async src="https://www.google-analytics.com/analytics.js"></script>
 
