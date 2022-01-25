@@ -17,15 +17,11 @@
       });
       ga("send", "pageview", "/options.html");
       ga("require", "ec");
-      function addToCart(product) {
+      function addToCart() {
         ga("ec:addProduct", {
-          id: product.id,
-          name: product.name,
-          category: product.category,
-          brands: product.brand,
-          variant: product.variant,
-          price: product.price,
-          quantity: product.qty,
+          id: document.getElementById("product-id").innerHTML,
+          name: document.getElementById("product-name").innerHTML,
+          price: document.getElementById("product-price").innerHTML,
         });
       }
       ga("ec:setAction", "add");
@@ -78,6 +74,10 @@
 
     <div class="single-product">
       <h3 id="product-name">Classic Dog</h3>
+      <details>
+        <h6 id="product-id">1</h6>
+        <p></p>
+      </details>
       <img
         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-dnVl2U2yUCciWYLxv0wZ704p9UUxvyvbIpPhs0cvVlwUUG7IwFs-Ldmp4yzlshTlnaw&usqp=CAU"
         alt="1"
@@ -90,9 +90,7 @@
       </p>
       <p id="product-price">Price £</p>
 
-      <button id="addToCart-btn" onclick="addToCart(product)">
-        Add to Cart
-      </button>
+      <button id="addToCart-btn" onclick="addToCart()">Add to Cart</button>
     </div>
     <!-- Main end -->
 
