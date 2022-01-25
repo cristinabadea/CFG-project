@@ -1,0 +1,102 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google Analytics -->
+    <script>
+      window.ga =
+        window.ga ||
+        function () {
+          (ga.q = ga.q || []).push(arguments);
+        };
+      ga.l = +new Date();
+      ga("create", "UA-217815719-1", { cookieDomain: "none" });
+      ga("set", "checkProtocolTask", function () {
+        /* nothing */
+      });
+      ga("send", "pageview", "/options.html");
+      ga("require", "ec");
+      function addToCart(product) {
+        ga("ec:addProduct", {
+          id: product.id,
+          name: product.name,
+          category: product.category,
+          brands: product.brand,
+          variant: product.variant,
+          price: product.price,
+          quantity: product.qty,
+        });
+      }
+      ga("ec:setAction", "add");
+      ga("send", "event", "UX", "click", "add to cart");
+    </script>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./delivery.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Header start -->
+    <header>
+      <!-- Navbar start -->
+      <ul class="navbar-container">
+        <!-- Logo start-->
+        <li class="nav-item nav-1">
+          <div>
+            F<img class="logo-img" src="../Images/burger-logo.jfif" /><img
+              class="logo-img"
+              src="../Images/burger-logo.jfif"
+            />DIE
+          </div>
+        </li>
+        <!-- Logo end-->
+
+        <!-- Home and Contact Menus START-->
+        <li class="nav-item nav-2"><a href="./index.html"> Home </a></li>
+        <li class="nav-item nav-3"><a href="./menu.html"> Our menu </a></li>
+        <li class="nav-item nav-2"><a href="./delivery.html"> Delivery </a></li>
+        <!-- Home and Contact Menus END -->
+      </ul>
+      <!-- Navbar end -->
+
+      <!-- Only small screen items Start-->
+      <ul class="sm-li-container">
+        <li class="sm-li-item"><a href="./index.html"> Home </a></li>
+        <li class="sm-li-item"><a href="./menu.html"> Our menus </a></li>
+        <li class="nav-item nav-2"><a href="./delivery.html"> Delivery </a></li>
+      </ul>
+      <!-- Only small screen items END-->
+    </header>
+    <!-- Header end -->
+
+    <!-- Main -->
+
+    <div class="single-product">
+      <h3 id="product-name">Classic Dog</h3>
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-dnVl2U2yUCciWYLxv0wZ704p9UUxvyvbIpPhs0cvVlwUUG7IwFs-Ldmp4yzlshTlnaw&usqp=CAU"
+        alt="1"
+      />
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
+        mollitia vero corporis reiciendis incidunt laborum, laudantium non
+        dolorem? Quia eligendi sunt expedita labore, natus omnis architecto
+        ipsam exercitationem facere id!
+      </p>
+      <p id="product-price">Price £</p>
+
+      <button id="addToCart-btn" onclick="addToCart(product)">
+        Add to Cart
+      </button>
+    </div>
+    <!-- Main end -->
+
+    <!-- js Script -->
+    <script src="./delivery.js"></script>
+  </body>
+</html>

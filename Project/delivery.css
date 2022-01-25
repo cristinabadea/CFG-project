@@ -1,0 +1,32 @@
+/** @format */
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.item {
+  margin: 1rem;
+  border: 2px solid black;
+}
+
+.item button {
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+.single-product {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 2px solid black;
+  margin: 1rem;
+  align-items: center;
+  padding: 1rem;
+}
+
+#addToCart-btn {
+  max-width: 5rem;
+  align-self: center;
+  margin: 1rem;
+}
