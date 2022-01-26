@@ -16,7 +16,9 @@
         /* nothing */
       });
       ga("send", "pageview", "/options.html");
+
       ga("require", "ec");
+
       function addToCart() {
         ga("ec:addProduct", {
           id: document.getElementById("product-id").innerHTML,

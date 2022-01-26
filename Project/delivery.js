@@ -32,3 +32,7 @@ var products = [
 ];
 
 document.getElementById("product-price").innerHTML = "£" + products[0].price;
+
+let x = document.getElementsByClassName("single-product")[0];
+console.log(x.firstElementChild.innerHTML);
+console.log(x.firstElementChild.nextSibling);
